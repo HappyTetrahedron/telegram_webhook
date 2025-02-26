@@ -27,7 +27,7 @@ def forward_message():
 
     message = {
         "message": data['message'],
-        "parse_mode": ParseMode.MARKDOWN_V2,
+        "parse_mode": ParseMode.HTML,
     }
     params['send'](message)
     resp = Response("")
